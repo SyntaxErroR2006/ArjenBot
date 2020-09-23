@@ -101,3 +101,6 @@ async function promptMessage(message, author, time, reactions) {
 module.exports.help = {
     name: "kick"
 }
+
+
+// Gemaakt door:  TGB/Jens

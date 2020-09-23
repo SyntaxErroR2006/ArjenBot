@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports.run = async(client, message, args) => {
 
-    if(message.member.hasPermission("MANAGE_PERMS")) return message.reply("U hebt geen rechten!")
+    if(message.member.hasPermission("ADMINISTRATOR")) return message.reply("U hebt geen rechten!")
 
     var trainingEmbed = new discord.MessageEmbed()
         .setTitle("Eenheidskiezer")
