@@ -2,8 +2,9 @@ const discord = require("discord.js");
 
 module.exports.run = async(client, message, args) => {
 
-    if(message.member.hasPermission("MANAGE_PERMS")) return message.reply("U hebt geen rechten.")
-    var trainingEmmbed = new discord.MessageEmbed()
+    if(message.member.hasPermission("MANAGE_PERMS")) return message.reply("U hebt geen rechten!")
+
+    var trainingEmbed = new discord.MessageEmbed()
         .setTitle("Eenheidskiezer")
         .setDescription("Voer het cijfer in van je eenheid.")
         .setColor("#00a2ed")
@@ -17,7 +18,7 @@ module.exports.run = async(client, message, args) => {
             { name: "6", value: "Politie" },
             { name: "7", value: "Rijkswaterstaat" },
         )
-    message.channel.send(trainingEmmbed)
+    message.channel.send(trainingEmbed)
 }
 
 module.exports.help = {
