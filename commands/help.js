@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
         { name: ":pencil:Tickets", value: "`-new\n-close\n-claim`" },
         { name: ":gear:Setup", value: "`SOON`" }
     )
+    message.channel.send(embed);
 
 }
 
