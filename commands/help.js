@@ -11,7 +11,8 @@ module.exports.run = async (client, message, args) => {
         { name: "🧍🏼‍♂️Openbaar", value: "`-help\n-serverinfo\n-leden\n-ping\n-game`" },
         { name: "📍Moderatie", value: "`-ban\n-kick\n-giveaway\n-clear`" },
         { name: ":pencil:Tickets", value: "`-new\n-close\n-claim`" },
-        { name: ":gear:Setup", value: "`SOON`" }
+        { name: ":gear:Setup", value: "`SOON`" },
+        { name: "⭐Note:", value: "`DM SyntaxErroR#0001 Voor meer info over de bot.`" }
     )
     message.channel.send(embed);
 
