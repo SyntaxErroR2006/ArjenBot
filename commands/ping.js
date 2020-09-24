@@ -1,6 +1,6 @@
 module.exports.run = async (client, message, args) => {
 
-    return message.channel.send("Ping nu: " + (message.createdTimestamp - Date.now()) + " ms");
+    return message.channel.send("Pong " + (message.createdTimestamp - Date.now()) + " ms");
 
 }
 
