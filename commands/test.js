@@ -6,14 +6,14 @@ module.exports.run = async (bot, message, args) => {
     var botEmbed = new discord.MessageEmbed()
     .setTimestamp()  
     .setThumbnail(message.guild.iconURL({ format: 'png' }))
-        .setDescription("**__help Information__**")
-        .setColor("RANDOM")
+        .setDescription("**__Help Information__**")
+        .setColor("#4287f5")
         .addField('**General**', [
             `**-> Server Name:** ${message.guild.name}`,
-            `**-> help :** Geef dit.`,
+            `**-> help :** Geeft dit.`,
             `**-> serverinfo :** Dit is alle informatie wat u momenteel nodig heeft. `,
             `**-> new :** Dit is ons ticket systeem. `,
-            `**-> Prefix:**`, botConfig.prefix,
+            `**-> prefix:**`, botConfig.prefix ,
             `**-> welkom :** Laat en welkom commando zien. dit word automatisch gedaan.`,
             `**-> ping :** Laat je ping zien.`,
             `**-> leden :** Laat alle leden zien.`,   
