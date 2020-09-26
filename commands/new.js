@@ -66,7 +66,7 @@ module.exports.run = async(client, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Hallo, ${message.author.username}`)
                         .setColor("#0082b5")
-                        .addField("Onderwerp", args [1])
+                        .addField("Onderwerp", args [1,2,3,4,5,6,7,8,9,10,11])
                         .setDescription("We willen graag direct je klachten/vragen horen, zodat een staff lid direct kan reageren en helpen! \n\n **----------------** \n Sollicitaties zijn momenteel **Gesloten**. in #berichten komt het wel te staan. \n **----------------** \n Komt een staff lid niet na 30min? Dan pas mag je ze **1** keer taggen. \n **----------------** \n\n Mvg, \n Arjenstad Support Team.");
 
                     settedParent.send(embedParent);
