@@ -11,6 +11,7 @@ module.exports.run = async (bot, message, args) => {
         .addField('**General**', [
             `**-> Server Name:** ${message.guild.name}`,
             `**-> help :** Geeft dit.`,
+            `**-> userinfo :** Geeft userinfo.`
             `**-> serverinfo :** Dit is alle informatie wat u momenteel nodig heeft. `,
             `**-> new :** Dit is ons ticket systeem. `,
             `**-> prefix:**`, botConfig.prefix ,
