@@ -17,7 +17,7 @@ module.exports.run = async (client, message, args) => {
 
     var embed = new discord.MessageEmbed()
         .setColor("")
-        .setThumbnail(member.user.displayAvatarURl({ size: 4096 }))
+        .setThumbnail(member.user.displayAvatarURL({ size: 4096 }))
         .setTitle(`${member.user.tag}`)
         .addField("ID:", `${member.id}`, true)
         .addField("Bijnamen:", nickName, true)
