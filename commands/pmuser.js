@@ -10,7 +10,7 @@ module.exports.run = async(client, message, args) => {
     var text = args.join(" ").slice(args[0].lenght + 1);
     if(!text) return message.channel.send("Geen bericht opgegeven.");
 
-    message.member.seend(text).then(() => {
+    message.member.send(text).then(() => {
         message.channel.send("Bericht is verzonden!");
     }).catch(() => {
         message.channel.send(":x: De persoon heeft zijn privé berichten uit staan.");
