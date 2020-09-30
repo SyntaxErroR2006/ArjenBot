@@ -39,7 +39,7 @@ client.login(process.env.token);
 client.on("ready", async () => {
 
     console.log(`${client.user.username} is online.`);
-    let activities = ["-info", "Bot maker: SyntaxErroR#0001", "Prefix -", "Arjenstad"]
+    let activities = ["!info", "Bot maker: SyntaxErroR#4666", "Prefix !", ]
     i = 0;
     setInterval(() => {
         client.user.setPresence({
@@ -84,13 +84,13 @@ client.on("message", async message => {
 // -WELKOM COMMAND-
 client.on("guildMemberAdd", member => {
 
-    var role = member.guild.roles.cache.get('734295980584861809');
+    var role = member.guild.roles.cache.get('760483790136016927');
 
     if (!role) return;
 
     member.roles.add(role);
 
-    var channel = member.guild.channels.cache.get('734295981658472558');
+    var channel = member.guild.channels.cache.get('760502346135633921');
 
     if (!channel) return;
 
@@ -98,7 +98,7 @@ client.on("guildMemberAdd", member => {
     
     var joinEmbed = new discord.MessageEmbed()
         .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
-        .setDescription(`Hallo! ${member.user.username}, Welkom bij de server! Info over de bot? typ: -info`)
+        .setDescription(`Hallo! ${member.user.username}, Welkom bij de server! Info over de bot? typ: !info`)
         .setColor("#30db00")
         .setFooter("Gebruiker gejoined op:")
         .setTimestamp();

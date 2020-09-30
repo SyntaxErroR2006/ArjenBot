@@ -49,7 +49,6 @@ module.exports.run = async(client, message, args) => {
                         ADD_REACTIONS: true,
                         VIEW_CHANNEL: true,
                         READ_MESSAGE_HISTORY: true
-
                     });
 
                     settedParent.updateOverwrite(message.author.id, {
@@ -66,8 +65,7 @@ module.exports.run = async(client, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Hallo, ${message.author.username}`)
                         .setColor("#0082b5")
-                        .addField("Onderwerp", args [1])
-                        .setDescription("We willen graag direct je klachten/vragen horen, zodat een staff lid direct kan reageren en helpen! \n\n **----------------** \n Sollicitaties zijn momenteel **Gesloten**. in #berichten komt het wel te staan. \n **----------------** \n Komt een staff lid niet na 30min? Dan pas mag je ze **1** keer taggen. \n **----------------** \n\n Mvg, \n Arjenstad Support Team.");
+                        .setDescription("We willen graag direct je klachten/vragen horen, zodat een staff lid direct kan reageren en helpen! \n\n **----------------** \n Sollicitaties zijn momenteel **Gesloten**. in #berichten komt het wel te staan. \n **----------------** \n Komt een staff lid niet na 30min? Dan pas mag je ze **1** keer taggen. \n **----------------** \n\n Mvg, \n DevJS Support Team.");
 
                     settedParent.send(embedParent);
 
