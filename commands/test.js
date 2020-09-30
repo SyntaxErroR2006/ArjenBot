@@ -11,14 +11,13 @@ module.exports.run = async (bot, message, args) => {
         .addField('**General**', [
             `**-> Server Name:** ${message.guild.name}`,
             `**-> help :** Geeft dit.`,
-            `**-> userinfo :** Geeft userinfo.`
+            `**-> userinfo :** Geeft userinfo.`,
             `**-> serverinfo :** Dit is alle informatie wat u momenteel nodig heeft. `,
             `**-> new :** Dit is ons ticket systeem. `,
             `**-> prefix:**`, botConfig.prefix ,
             `**-> welkom :** Laat en welkom commando zien. dit word automatisch gedaan.`,
             `**-> ping :** Laat je ping zien.`,
-            `**-> leden :** Laat alle leden zien.`,   
-            `**-> game :** Laat de game link zien.`,          
+            `**-> leden :** Laat alle leden zien.`,         
             '\u200b'
 
         ])
